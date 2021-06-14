@@ -1,7 +1,7 @@
-# Pull base image 
-From tomcat:8-jre8 
+FROM httpd:latest
 
-# Maintainer 
-MAINTAINER "info@johnydev.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+MAINTAINER "john.bedeir@gmail.com"
+
+COPY ./webapp/src/main/webapp /usr/local/apache2/htdocs
+
 
